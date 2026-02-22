@@ -54,7 +54,7 @@ function onWeekSlide(v) {
 
 // ── TABS ──
 function tab(n) {
-  const names = ['layout', 'paths', 'delivery', 'query', 'replan'];
+  const names = ['layout', 'paths', 'query', 'replan'];
   document.querySelectorAll('.dash-tab').forEach((t, i) => t.classList.toggle('active', names[i] === n));
   document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
   document.getElementById('tab-' + n).classList.add('active');
@@ -237,28 +237,6 @@ function renderLayout(data, week) {
       </div>
     </div>`;
 
-  // DELIVERY TAB
-  document.getElementById('deliveryEmpty').style.display = 'none';
-  const deo = document.getElementById('deliveryOut');
-  deo.style.display = 'flex';
-  deo.innerHTML = `
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title"><div class="card-dot" style="background:var(--orange)"></div>DELIVERY SEQUENCE — WEEK ${week}</div>
-      </div>
-      <div class="card-body">
-        ${(data.deliverySequence || []).map(d => `
-          <div class="delivery-row">
-            <div class="delivery-num">${d.order}</div>
-            <div class="delivery-body">
-              <div class="delivery-mat">${d.material}</div>
-              <div class="delivery-meta">Volume: ${d.volume} · ${d.note}</div>
-              <div class="delivery-zone">→ ${d.stagingZone}</div>
-            </div>
-            <div class="delivery-day">${d.day}</div>
-          </div>`).join('')}
-      </div>
-    </div>`;
 }
 
 // ── QUERY ──

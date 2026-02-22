@@ -141,16 +141,6 @@ Generate a JSON response (ONLY JSON, no markdown):
       "avoids": "What hazard or conflict this path avoids"
     }}
   ],
-  "deliverySequence": [
-    {{
-      "order": 1,
-      "material": "Material name",
-      "volume": "Quantity",
-      "stagingZone": "Where it goes",
-      "day": "Mon AM",
-      "note": "Logistics note"
-    }}
-  ],
   "materialsTable": [
     {{"material": "Name", "volume": "High|Med|Low", "zone": "Staging zone name"}}
   ],

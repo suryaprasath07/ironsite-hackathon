@@ -115,7 +115,7 @@
     <div class="dash-tabs">
       <div class="dash-tab active" onclick="tab('layout')">ZONE LAYOUT</div>
       <div class="dash-tab"        onclick="tab('paths')">WORKER PATHS</div>
-      <div class="dash-tab"        onclick="tab('delivery')">DELIVERY SEQUENCE</div>
+
       <div class="dash-tab"        onclick="tab('query')">AI RESPONSE</div>
       <div class="dash-tab"        onclick="tab('replan')">REVISED SCHEDULE</div>
     </div>
@@ -140,17 +140,7 @@
       <div id="pathsOut" style="display:none;flex-direction:column;gap:13px;"></div>
     </div>
 
-    <!-- DELIVERY SEQUENCE TAB -->
-    <div class="tab-content" id="tab-delivery">
-      <div class="empty" id="deliveryEmpty">
-        <div class="empty-icon">🚛</div>
-        <div class="empty-title">NO DELIVERY PLAN</div>
-        <div class="empty-desc">Generate the layout plan to see the optimized delivery sequence.</div>
-      </div>
-      <div id="deliveryOut" style="display:none;flex-direction:column;gap:13px;"></div>
-    </div>
-
-    <!-- AI RESPONSE TAB -->
+<!-- AI RESPONSE TAB -->
     <div class="tab-content" id="tab-query">
       <div class="empty" id="queryEmpty">
         <div class="empty-icon">💬</div>

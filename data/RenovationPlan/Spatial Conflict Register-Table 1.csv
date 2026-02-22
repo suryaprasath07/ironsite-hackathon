@@ -1,0 +1,18 @@
+SPATIAL CONFLICT RISK REGISTER — Renovation Plan,,,,,,
+Renovation conflicts are more complex than new builds — existing protected elements + live structural work create unique spatial risks,,,,,,
+Week,Conflict Type,Element A,Element B,Zone,Severity,Resolution
+3,Demo + protected zone,Demo crew (kitchen stair),East porch + fire-escape (REMAIN),East transition zone,CRITICAL,Hoarding wall between demo zone and East protected elements. Daily check
+3,Hazmat stop-work,All trades on site,Hazmat abatement zone,As identified,CRITICAL,If hazmat found: full stop-work in affected area. Quarantine zone established immediately
+4,Shoring + access,Acrow props (temp shoring),All traffic through dining zone,Dining – East,HIGH,Prop positions limit access. Mark clearly. No loads placed near props during beam removal
+5,Crane swing arc,Crane (Parallam beam lift),East exclusion zone (porch/stair),North to dining,CRITICAL,Crane must NOT swing over East zone. Lift path: North → West → dining only. Banksman required
+5,Two-beam week,Parallam beam (dining),Timberstrand beam (NW porch),N + NW staging,HIGH,"Two heavy beam deliveries same week. Sequence: Parallam Mon, Timberstrand Thu. Separate crane setups"
+6,Block + joist congestion,CMU block pallets (West),TJI joist bundles (West),West staging,HIGH,"Both heavy – West staging only. Sequence: joists first (lifted to level), then block staged below"
+9,Scaffold + facade access,Face brick scaffold (N facade),Window deliveries (N facade),North facade,HIGH,Scaffold gaps designated for window pass-through. Windows delivered before scaffold fully erected
+10,Concrete + exclusion zone,Concrete pump (East porch stairs),East exclusion zone (fire escape),East side,CRITICAL,Concrete pump positioned North-East. Chute reaches East porch. Fire-escape stair barriered – no concrete contact
+10,Brick post + fire escape,New brick post construction (SE),Existing fire-escape stairs (SE),South-East corner,HIGH,"12""×12"" post on existing fdn. Scaffold for post must not block fire-escape path at any time"
+11,Gas-proof + active trades,Garage ceiling repair (gas-proof),Electrical rough-in (garage),Garage,CRITICAL,Gas-proof ceiling must be complete before electrician works in garage. Sequenced: ceiling → inspection → electrical
+13,MEP + fire-rated zones,Electrical rough-in,Fire-rated ceiling (parking),West parking levels,HIGH,Electrical penetrations through fire-rated ceiling require fire-stopping. Specify before rough-in begins
+14,Drywall + fire rating,Standard drywall crew,Type X zones (garage/parking),Garage + W parking,CRITICAL,Type X must be used in rated zones. GC to mark all sheets before delivery. Inspector to verify before taping
+15,Kitchen floor rating,Flooring crew (kitchen),STC 50 + 45min fire assembly,Kitchen,CRITICAL,Specified assembly only. Any substitution voids fire rating. Inspector to verify assembly before topping
+17,Paint + panel energising,Paint storage (flammable),Electrical panel energising,All interior,CRITICAL,Paint completely removed from interior before panel energised. No exceptions – fire risk
+19,Multi-inspection week,Fire inspector,Structural engineer sign-off,Garage + parking + all structural,HIGH,Coordinate both inspections same week. GC to pre-submit all documentation 1 week prior

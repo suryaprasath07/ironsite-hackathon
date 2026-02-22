@@ -1,0 +1,34 @@
+"SPATIALFLOW SPATIAL LAYOUT INPUT — Renovation Plan (68'-2"" × 43'-0"")",,,,,,,,,
+"⚠ RENOVATION CONSTRAINT: Existing porch (East), fire-escape stairs (SE), concrete stair (E), steel guard — ALL MUST REMAIN. Route all materials to avoid these zones.",,,,,,,,,
+Week,Phase,Activity,Materials Arriving,Volume,Work Zone,Equipment,Storage Zone,Conflict Risk,Spatial Priority Note
+1,Pre-Con,Hazmat survey,Test equipment only,Negligible,Full interior,None,N/A – survey only,CRIT,ALL rooms accessed. Building empty. No storage conflict.
+1,Pre-Con,Structural assessment,None,None,Beam/post locations,None,N/A,CRIT,Engineer must access all 3 parking levels + dining beam
+2,Pre-Con,Temp protection – east,"Hoarding boards, tarps",Low,East porch + SE stairs,Pickup,East perimeter – install,HIGH,East porch + fire escape stairs: NO access. Hoarding marks exclusion zone
+3,Demo,Kitchen stair removal,None – debris out,High debris,Kitchen NE,Skip/dumpster,Dumpster: North access road,HIGH,Debris route: kitchen → north corridor → North dumpster. Keep East clear
+3,Demo,Close-up window openings,"Face brick, mortar, lintels",Medium,Bedroom 1+2 facade,Scaffold (2-lift),North facade staging,HIGH,Scaffold N facade. Brick must match – store samples on site
+3,Demo,Hazmat abatement,"Containment barriers, PPE",Low,As identified,Negative pressure unit,Adjacent to abatement zone,CRIT,STOP WORK ZONE during abatement. Full site access halted in affected area
+4,Demo,Remove dining beam,Temp shoring (acrow props),Medium,Dining – East,Acrow props,Dining zone – props in place,CRIT,Temp shoring BEFORE beam removal. Props remain until Parallam installed
+4,Demo,Remove SE brick post,None – debris out,Low debris,South-East corner,Skip,SE corner – small skip,MED,Small area. Existing foundation stays. Protect adjacent fire-escape stair
+5,Structure,Parallam beam – dining,"3½×9½"" Parallam beam (heavy)",High,Dining,Crane / boom truck,North staging – beam length,CRIT,Long beam – needs clear North access. Temp shores stay until beam seated+connected
+5,Structure,Timberstrand beam – porch,"2-1 3/4×11 7/8"" Timberstrand",High,NW porch,Crane,North-West staging,CRIT,Crane North-West. Must not swing over East exclusion zone
+5,Structure,HSS steel post,"3.5"" HSS steel post + plates",Medium,West parking level,Crane / fork,West staging,HIGH,"Steel post heavy. Base plate: 4×4×½"". Crane reach to West levels"
+6,Structure,TJI joists – parking,"11 7/8"" TJI bundles",High,West parking levels,Crane,West staging – stacked,HIGH,Joists long – West staging must be clear 20ft. Crane active all week
+6,Structure,Concrete block – parking wall,"CMU 8"" block pallets",Very High,West parking,Forklift,West – staged by level,HIGH,Heaviest material. Forklift accesses West side only. No East access this week
+6,Structure,Kitchen ledger + bolts,"2×10 lumber, 1½"" dia bolts",Low,Kitchen NE,None,Inside kitchen,MED,Small material. Store inside. Bolt pattern per plan – staggered 2 rows
+9,Exterior,Kitchen floor assembly,"Joists, decking, fire materials",Medium,Kitchen,None,Inside kitchen zone,HIGH,Fire-rated assembly – materials must be certified. Inspect before close-up
+9,Exterior,Face brick – bedrooms,Brick pallets (match existing),High,N facade – bed 1+2,Scaffold,North facade – adjacent,HIGH,Brick colour/texture match critical. Order samples week 1. Stage North only
+10,Exterior,New windows – all,Window units (3),Medium,N + E facades,None / small crane,North staging – protected,MED,Windows fragile. Deliver just-in-time. North facade access only
+10,Exterior,New concrete stairs – E porch,Ready-mix concrete,Low,East covered porch,Concrete pump,East porch zone,HIGH,ONLY concrete work near East exclusion zone. Protect existing porch structure
+10,Exterior,New brick post – SE,"Face brick, mortar, rebar",Low,South-East corner,None,SE corner – small staging,HIGH,Build on existing foundation. Fire-escape stair adjacent – do NOT disturb
+11,Exterior,Garage slab patch,Ready-mix concrete (small),Low,Garage – South-West,None,Garage interior,MED,Maintain 1% slope to front. Gas-proof ceiling must remain intact above
+11,Exterior,Gas-proof ceiling – garage,"Type X drywall, intumescent",Medium,Garage ceiling,None,Garage interior,CRIT,Gas-proof rating must be maintained. Inspector sign-off before next phase
+11,Exterior,Guard rails – porch,Steel / timber rail components,Medium,NW porch,None,NW porch area,HIGH,"3'-6"" high guard. Install after beam and post confirmed plumb and level"
+13,MEP,Plumbing rough-in,"PVC/copper pipe, fittings",Medium,Bathroom + W/D zone,None,Inside – bathroom zone,MED,W/D hookup adjacent bathroom. Coordinate drain with existing slab penetrations
+13,MEP,Electrical rough-in,"Wire, conduit, panel gear",Medium,All rooms,None,Inside – locked storage,HIGH,Panel upgrade likely. Coordinate with fire-rated ceiling zones in parking/garage
+14,Interior,Insulation – fire rated,1½ hr rated insulation + board,Medium,Parking + garage ceil,None,Inside – staging by zone,CRIT,C1 type ceiling insulation. Do not substitute. Inspector to verify
+14,Interior,Drywall – all rooms,Drywall sheets (type X zones),High,All interior,None,Inside – room by room,HIGH,Type X for garage + parking fire-rated areas. Standard elsewhere
+15,Interior,Kitchen floor finish,"Flooring, adhesive, underlayment",Medium,Kitchen,None,Inside kitchen,HIGH,STC 50 + 45min fire. Use specified assembly – no substitution
+15,Interior,Bathroom tile + W/D,"Tile, grout, W/D unit",Medium,Center bathroom,None,Inside bathroom,MED,W/D connection: verify rough-in clearances before delivery
+16,Interior,Paint all rooms,"Paint, primer, drop sheets",Low,All rooms,None,Inside – cool ventilated,HIGH,Flammable – ventilated storage. No energising in storage room
+19,Close-Out,Fire rating inspections,None,None,Garage + parking,None,N/A,CRIT,"Inspector verifies: 1½ hr ceiling, gas-proof garage, STC 50 kitchen floor"
+22,Close-Out,Certificate of Occupancy,None,None,Full building,None,N/A,CRIT,All systems commissioned. Engineer + inspector sign-off required

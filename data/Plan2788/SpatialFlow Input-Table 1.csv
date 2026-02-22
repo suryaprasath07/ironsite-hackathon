@@ -1,0 +1,38 @@
+SPATIALFLOW SPATIAL LAYOUT INPUT — Plan 2788,,,,,,,,,
+"This sheet drives the AI spatial reasoning engine: site zone assignments, material staging, equipment placement, conflict flags",,,,,,,,,
+Week,Phase,Activity,Materials Arriving,Volume / Weight,Work Zone (compass),Equipment Needed,Site Storage Zone,Conflict Risk,Spatial Priority Note
+1,Site Prep,Mobilisation,"Temp office, fencing, signs",Low,Perimeter,Pickup trucks,North edge – site entrance,LOW,Establish single entry/exit point at north
+1,Site Prep,Survey & stakeout,Survey equipment,Negligible,Full site,None,N/A,LOW,Clear full site sightlines required
+2,Site Prep,Utility connections,"Pipe, conduit, meters",Medium,North boundary,Mini excavator,North staging strip,MED,Keep north edge clear for utility trucks
+2,Foundation,Excavation,None arriving,None,Full footprint,Excavator + dump trucks,Spoil pile – East quadrant,HIGH,Dump truck route: East access road. Spoil pile must not block crane zone
+3,Foundation,Footings pour,Ready-mix concrete (trucks),High,Building perimeter,Concrete pump,Pump: South-Center,CRIT,Continuous truck queue needed. Route: South entry → pump → exit East
+4,Foundation,Slab prep + sub-slab,"Rebar, gravel, poly sheeting",High,Full footprint,None,Rebar: South staging,HIGH,Rebar bundles heavy — stage adjacent to footprint south side
+4,Foundation,Under-slab plumbing,"PVC pipe, fittings",Medium,Kitchen + baths,None,Plumbing materials: Center-W,MED,Small materials — store inside future footprint boundary
+5,Foundation,Slab pour,Ready-mix concrete (trucks),Very High,Full footprint,Concrete pump,Pump: South-Center,CRIT,PEAK concrete day. All other deliveries STOP. Full site access for trucks
+6,Structure,CMU / block walls,Concrete block pallets (heavy),Very High,All elevations,Block crane / forklift,Block staging: East + South,CRIT,Forklift must access all wall faces. Stage blocks per elevation to minimise carries
+7,Structure,Viga / latilla delivery,"Peeled log vigas (long, heavy)",High,Roof zone,Crane or boom truck,West staging – long load area,HIGH,Vigas up to 20ft long. West staging must be clear 30ft. Overhead clearance critical
+8,Structure,Roof framing,"Lumber, hurricane ties, nails",Medium,Roof level,Crane / material lift,Lumber: South staging,HIGH,Crane critical – position South-Center to reach all roof zones
+9,Structure,Roof sheathing,"OSB/decking, felt paper",Medium,Roof,Crane,Roof materials: South staging,MED,Crane still active. No material staging under crane swing arc
+9,MEP Rough,Plumbing rough-in,"Copper/PVC pipe, fittings",Medium,Baths + Kitchen,None,Inside building footprint,MED,Materials stored inside – protect from weather
+9,MEP Rough,HVAC rough-in,"Duct, equipment, insulation",High,Attic / all rooms,Lift / crane,HVAC equip: North staging,HIGH,HVAC units heavy. Stage North – away from active block work
+10,MEP Rough,Electrical rough-in,"Wire, conduit, panel",Medium,All rooms,None,Inside building,MED,Coordinate with plumber – no ceiling conflict
+10,MEP Rough,Gas rough-in,"Black iron pipe, fittings",Low,West ext + LR,None,West staging,HIGH,BBQ + fireplace gas lines. Pressure test before close-up
+11,Exterior,Stucco / plaster,"Stucco mix, lath, scaffold",High,All exterior,Scaffold (tube & clamp),Scaffold storage: South,HIGH,Scaffold around full perimeter. Worker path: perimeter walkway only
+11,Exterior,Roof tile,Roof tile pallets,Very High,Roof,Crane,Tile staging: South-East,CRIT,HEAVIEST roof load. Stage East – crane lifts to roof. Do NOT stage under eave
+12,Exterior,Flagstone – portal/hearth,Flagstone pallets,High,NE Portal + LR,Forklift,Stone: NE corner staging,MED,Small area – stage directly adjacent to work zone
+12,Exterior,Courtyard wall,"CMU block, mortar",Medium,West courtyard,None,West exterior,MED,West courtyard enclosed – materials must enter via West gate
+13,Exterior,Concrete flatwork,Ready-mix concrete,Medium,Portals + drives,Concrete pump,Pump: accessible all portals,MED,"3 separate pour areas: front portal, rear portal, drives"
+13,Interior,Insulation,Batt insulation rolls,Low,All interior,None,Inside building,LOW,Lightweight. Store inside. No conflict
+14,Interior,Drywall – garage,Drywall sheets (type X),Medium,Garage,None,Garage interior staging,MED,Type X fire rated for garage. Keep dry
+15,Interior,Interior plaster,"Plaster mix, scaffold",Medium,LR/Dining/Entry,Interior scaffold,Interior – center,HIGH,Interior scaffold conflicts with flooring crew – sequence carefully
+15,Interior,Hardwood flooring,Hardwood planks (acclimatise),Medium,LR + Dining,None,Inside – acclimatise 72hr,HIGH,Must acclimatise ON SITE 72hrs before install. Stage inside Week 14
+15,Interior,Cabinetry,"Cabinet boxes, hardware",Medium,Kitchen + Baths,None,Inside – Kitchen zone,MED,Deliver after plaster dry. Sequence: cabs → tile → plumbing trim
+16,Interior,Tile – floor,"Tile, thinset, grout",Medium,Kitchen/Baths,None,Inside – bath zones,HIGH,Wet trade – allow 48hr cure before traffic
+16,Interior,Carpet,Carpet rolls,Medium,"Beds 1,2,3",None,Bedrooms – last,MED,Install LAST in bedroom sequence after all other trades done
+16,Interior,Fireplace surround,"Cultured stone, mortar",Low,Living Room,None,LR – fireplace zone,MED,Protect hardwood during stone install
+17,Interior,Plumbing trim-out,"Fixtures, faucets, toilets",Medium,All baths + kit,None,Inside – staged by room,MED,Fixtures fragile – deliver just-in-time Week 17
+17,Interior,Electrical trim-out,"Devices, fixtures, panel",Low,All rooms,None,Inside,MED,Panel energised this week – safety protocols
+17,Interior,Paint – interior,"Paint, primer, drop sheets",Low,All rooms,None,Inside – paint storage cool,HIGH,"SEQUENCE CRITICAL: paint before trim, after tile"
+18,Interior,Melamine shelving,"Melamine panels, hardware",Low,Kitchen,None,Inside – kitchen,LOW,Final cabinet item – after all appliances rough positioned
+19,Interior,Final clean,Cleaning supplies,Negligible,Full interior,None,N/A,LOW,All trades complete before clean begins
+20,Interior,Final inspection / CO,None,None,Full site,None,N/A,CRIT,Certificate of Occupancy. All systems commissioned and tested

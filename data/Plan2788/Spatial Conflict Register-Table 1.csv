@@ -1,0 +1,17 @@
+SPATIAL CONFLICT RISK REGISTER — SpatialFlow Output,,,,,,
+Identifies weeks/zones where multiple trades or deliveries compete for the same site space,,,,,,
+Week,Conflict Type,Trade/Activity A,Trade/Activity B,Conflict Zone,Severity,Recommended Resolution
+5,Access conflict,Concrete pump + mixer trucks,ALL other site access,South + East access,CRITICAL,Full site lockdown on pour day. No other deliveries Wk 5
+6,Zone overlap,CMU block staging (East+South),Excavator demob route,East + South,HIGH,Demob excavator before block delivery. Sequence: Mon demob → Wed blocks
+7,Long-load access,Viga delivery (20ft flatbed),Lumber delivery (flatbed),West + South,HIGH,"Schedule on different days. Vigas Mon, Lumber Wed. Clear West 30ft"
+8,Crane swing arc,Crane (South-Center position),Lumber staging (South),South quadrant,HIGH,Stage lumber East of crane centerline. Mark no-go arc with cones
+9,Trade stack,Plumber (rough-in),HVAC (rough-in),Kitchen + attic,HIGH,Plumber: ground floor first. HVAC: attic first. Daily coordination mtg
+9,Trade stack,Electrician (rough-in),Plumber (rough-in),All interior walls,HIGH,Assign zones by room. Electrician: East half. Plumber: West half Wk 9
+11,Scaffold vs access,Perimeter scaffold (erected),Stucco material deliveries,All exterior faces,MED,Designate scaffold bay gaps at South for material pass-through
+11,Crane + scaffold,Crane (roof tile lifts),Scaffold (perimeter),East elevation,HIGH,Lift roof tiles before East scaffold bay erected. Sequence critical
+13,Multi-pour conflict,Concrete flatwork (3 locations),Interior trades moving in,Portals + interior,MED,Pour portals first. Interior trades enter after 24hr cure
+15,Wet + dry conflict,Interior plasterer,Hardwood flooring crew,LR + Dining,HIGH,"Plaster fully dry (7 days min) before hardwood. Plaster Wk 14, floor Wk 15+"
+15,Trade congestion,Cabinetry install,Tile setter (floor),Kitchen,HIGH,Cabs first → tile up to cab bases → plumbing trim. Strict sequence
+16,Floor protection,Cultured stone (fireplace),Hardwood floor (installed),Living Room,MED,Protect hardwood with ram board during stone work. Inspect daily
+17,Multi-trade peak,Plumber + Electrician + HVAC,Painter,All rooms,HIGH,Paint AFTER all rough trim complete. No wet paint with live trades
+17,Flammable storage,Paint storage (interior),Electrical energising,Interior – all,CRITICAL,Paint stored in ventilated room. No energising in paint storage room

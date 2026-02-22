@@ -1,0 +1,35 @@
+"SPATIALFLOW SPATIAL LAYOUT INPUT — House #415 Mediterranean (84'1"" × 60')",,,,,,,,,
+"LARGEST SITE OF 3 PLANS — Dual garage, two-story voids, clay tile roof, and Mediterranean stucco create complex multi-trade staging requirements",,,,,,,,,
+Week,Phase,Activity,Materials Arriving,Volume,Work Zone,Equipment,Storage Zone,Conflict Risk,Spatial Priority Note
+1,Pre-Con,Permits + beam engineering,Documents only,None,Office,None,N/A,LOW,LVL beam package must be with lumber co. week 1 — long lead item
+3,Site Prep,Clearing + grading,None out – debris,High debris,Full 84'×60' site,Bulldozer + grader,Spoil pile: East quadrant,HIGH,Large site. Establish South access road first. Spoil East – away from entry porch zone
+4,Site Prep,Utility trenching,"Pipe, conduit, meters",Medium,South + North edges,Mini excavator,North staging strip,MED,"Dual service entry for large home. Gas, water, sewer, electric – coordinate"
+4,Found.,Excavation,None – debris out,Very High,Full footprint,Large excavator + dump trucks,Spoil: East,CRIT,"84'×60' = 5,040 SF excavation. Many dump truck cycles. Route: East access only"
+5,Found.,Footings pour,Ready-mix (trucks),High,Full perimeter,Concrete pump,Pump: South-Center,CRIT,Large perimeter – multiple pump positions may be needed. South + West setup
+6,Found.,Stem walls + foundation,"Concrete block, rebar, concrete",Very High,Full perimeter,Crane / pump,Block: East + South staging,HIGH,"Block walls + poured sections. Stage block East, concrete trucks South"
+7,Found.,Garage slab pour,Ready-mix concrete,High,Both garages NW+SW,Concrete pump,Pump: West side,HIGH,938 SF garage slab. West pump position. Keep South approach clear for trucks
+8,Found.,Main floor slab – PEAK,Ready-mix (10-12 trucks),Very High,Full first floor,Concrete pump ×2,Two pumps: South + West,CRIT,LARGEST pour of project. 2 pumps needed. All other site access BLOCKED pour day
+9,Framing,Exterior wall framing,Lumber – 2×6 walls,Very High,Full perimeter,Crane,South staging – large lumber,HIGH,2×6 exterior walls full perimeter. Crane South-Center. Stage lumber South
+10,Framing,LVL beam deliveries,"LVL beams (long, heavy, precision)",High,Foyer + Great Rm,Crane,North staging – clear 30ft,CRIT,LVL beams long and heavy. Crane critical. Sequence: Great Room beam → Foyer beam → garage headers
+11,Framing,LVL beam – garage doors,LVL headers 18' + 9',Medium,Both garages,Crane,West staging,CRIT,18'×8' two-car header is very long. West crane position for garage
+12,Framing,Stair framing – grand foyer,"Stair stringers, treads rough",Medium,Entry foyer center,None,Inside foyer,HIGH,Radius stair in two-story void. Complex framing – lumber co. plans required
+13,Framing,2nd floor TJI joists,"TJI joist bundles (15'5"" spans)",High,Over East portion,Crane,East staging – stacked,HIGH,Joists long – East staging 20ft clear. Crane active Wks 13-15
+14,Framing,Two-story void framing,"LVL, lumber, scaffold",High,Foyer + Great Room,Scaffold (interior),Inside – two-story zones,CRIT,Interior scaffold for two-story void framing. Separate from exterior crane
+14,Framing,Roof framing begins,"2×12 rafters, hardware",Very High,Full roof,Crane,South staging – large lumber,CRIT,Crane still active. No staging under crane swing arc
+16,Roof,Clay tile delivery,Clay roof tile (very heavy),Very High,Full roof,Crane,East + South staging,CRIT,Heaviest roof load of all 3 plans. Clay tile – structural engineer verify before delivery
+17,Exterior,Exterior stucco – scaffold,"Stucco mix, lath, full scaffold",Very High,All 4 elevations,Full perimeter scaffold,South staging – stucco mix,HIGH,3-coat Mediterranean stucco. Scaffold full perimeter. Material route: gaps at South only
+18,Exterior,Front porch columns + masonry,"Masonry block, mortar, columns",High,South front porch,Small crane / fork,South-Center staging,HIGH,Mediterranean columns heavy. Small crane or forklift. Scaffold still active on walls
+18,Exterior,Colored entry porch flagstone,"Flagstone pallets, mortar",High,South-Center entry,Forklift,South staging – stone pallets,HIGH,Stage South-Center. Heavy stone. Forklift must access entry zone while scaffold active on walls
+19,Exterior,Windows + exterior doors,"Window units, Alder front door",Medium,All elevations,Scaffold + small crane,East staging – protected,HIGH,Alder door fragile – deliver just-in-time. Scaffold gaps for window pass-through
+20,Exterior,Grand stair – exterior,"Masonry, stone treads",High,South front entry,None,South staging,MED,7-8 stair options. Third optional. Coordinate with front porch masonry completion
+19,MEP,Plumbing rough-in,Copper + PVC pipe,High,Master Bath + mains,None,Inside – by room,HIGH,"Master bath has 2 shower heads, wet bar. Large scope. Start inside while scaffold active outside"
+20,MEP,HVAC rough-in,"Ductwork, air handlers, units",High,All rooms + attic,Crane for units,North staging – HVAC units,HIGH,Attic HVAC unit over garage – crane to lift. Coordinate with roof completion
+21,MEP,Electrical rough-in,"Wire, conduit, panel",High,All rooms,None,Inside – locked,HIGH,200A+ panel. Chandelier provision in foyer rotunda – rough-in before ceiling close
+22,Interior,Insulation,"R27 batts, attic insul.",High,All walls + attic,None,Inside – by area,MED,R27 for 2×6 walls. Attic insulation over garage zone critical for energy
+22,Interior,Drywall – all floors,Drywall sheets (large volume),Very High,All interior,None,Inside – by floor,HIGH,Large home – big drywall delivery. Two-story rooms need interior scaffold
+23,Interior,Special ceiling work begins,"Scaffold, specialty materials",High,Foyer + Great Room,Interior scaffold,Inside – two-story zones,CRIT,Coffered + rotunda + tray ceilings all happening Wks 23-25. Scaffold shared resource – sequence carefully
+24,Interior,Premium stone tile – main,Stone tile (300 SF),High,Foyer+Great+Kitchen,None,Inside – protected staging,HIGH,Heavy stone tile. Deliver per room. Protect subfloor during delivery
+24,Interior,Eramosa tile – master bath,"Eramosa tile, mosaic",High,Master Bath,None,Inside master bath zone,HIGH,Mosaic detail requires specialist. Sequence: tile → pedestal → fixtures
+25,Interior,Carpet – master suite,Carpet rolls (300 SF),Medium,Master Bed + Closet,None,Inside bedrooms,MED,Install LAST in bedroom sequence. After all other trades complete in zone
+26,Interior,Chandelier – grand foyer,"Chandelier (heavy, fragile)",Low,Entry Foyer,Interior scaffold,Inside foyer – protected,CRIT,Chandelier heavy + fragile. Scaffold still needed. Install after drywall + paint complete
+27,Close-Out,Final landscaping,"Plants, mulch, drive materials",Medium,All exterior,Skid steer,Exterior perimeter,LOW,Mediterranean landscape. After all exterior work complete. Do not disturb porch areas

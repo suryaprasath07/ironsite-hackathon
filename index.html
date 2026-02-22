@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpatialFlow — Construction Logistics AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="logo">⬡ SPATIALFLOW <span>CONSTRUCTION LOGISTICS AI</span></div>
+  <div class="topbar-right"></div>
+</div>
+
+<div class="shell">
+
+  <!-- ══ LEFT PANEL ══ -->
+  <div class="left-panel">
+
+    <!-- Site plan upload -->
+    <div class="panel-section">
+      <div class="section-label">Site Plan Image</div>
+      <div class="upload-zone" id="uploadZone"
+           ondragover="event.preventDefault();this.classList.add('drag')"
+           ondragleave="this.classList.remove('drag')"
+           ondrop="handleImgDrop(event)">
+        <input type="file" accept="image/*" onchange="handleImgSelect(this)"/>
+        <div class="upload-label" id="uploadLabel">
+          <div style="font-size:20px;margin-bottom:3px">📐</div>
+          <div>Drop site plan or <span>browse</span></div>
+          <div style="font-size:9px;opacity:0.5;margin-top:2px">PNG · JPG — your plan stays as-is</div>
+        </div>
+        <div class="upload-filename" id="uploadFilename"></div>
+      </div>
+    </div>
+
+    <!-- Project schedule -->
+    <div class="panel-section">
+      <div class="section-label">Project Schedule</div>
+      <div class="csv-zone" id="csvZone">
+        <input type="file" accept=".csv,.txt" onchange="handleCsvSelect(this)"/>
+        <div class="upload-label">
+          <div style="font-size:14px;margin-bottom:2px">📋</div>
+          <div>Upload CSV or <span style="color:var(--teal)">TXT schedule</span></div>
+        </div>
+        <div class="csv-filename" id="csvFilename"></div>
+      </div>
+      <div class="or-divider">— OR PASTE BELOW —</div>
+      <div class="input-label">PASTE SCHEDULE (week, activity, trades, materials)</div>
+      <textarea class="text-input week-input" id="scheduleText"
+        placeholder="Week 1: Site preparation, excavation. Trades: civil. Materials: fencing, temp office&#10;Week 2: Foundation trenching. Trades: civil, concrete. Materials: rebar, formwork&#10;Week 3: Foundation pour. Trades: concrete. Materials: 40m3 concrete, rebar&#10;..."></textarea>
+    </div>
+
+    <!-- Current week -->
+    <div class="panel-section">
+      <div class="section-label">Current Week</div>
+      <div class="week-row">
+        <div class="week-num-display" id="weekNumDisplay">01</div>
+        <div class="week-info">
+          <div class="week-info-act"  id="weekActDisplay">—</div>
+          <div class="week-info-meta" id="weekMetaDisplay">Select week to view layout</div>
+        </div>
+      </div>
+      <input type="range" id="weekSlider" min="1" max="20" value="1" oninput="onWeekSlide(this.value)">
+      <button class="primary-btn" id="generateBtn" onclick="generateLayout()">
+        ⬡ GENERATE LAYOUT PLAN ▶
+      </button>
+    </div>
+
+    <!-- Query -->
+    <div class="panel-section">
+      <div class="section-label">Ask SpatialFlow</div>
+      <textarea class="text-input big-input" id="queryInput"
+        placeholder="e.g. Where should steel beams be staged this week?&#10;What is the optimal worker path from site entry to zone B?&#10;Where should the crane be positioned?"></textarea>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-top:6px;">
+        <button class="preset-q" onclick="setQ(this.innerText)">→ Where should materials be staged this week?</button>
+        <button class="preset-q" onclick="setQ(this.innerText)">→ Optimal worker path to the active work zone?</button>
+        <button class="preset-q" onclick="setQ(this.innerText)">→ Where should the crane be positioned?</button>
+        <button class="preset-q" onclick="setQ(this.innerText)">→ What should be pre-staged for next week?</button>
+      </div>
+      <button class="outline-btn teal" onclick="runQuery()" style="margin-top:8px;">OPTIMIZE ▶</button>
+    </div>
+
+    <!-- Disruption -->
+    <div class="panel-section">
+      <div class="section-label">Report Disruption</div>
+      <div class="delay-type-grid">
+        <button class="delay-type-btn sel" id="dt-material" onclick="setDT('material')">MATERIAL DELAY</button>
+        <button class="delay-type-btn"     id="dt-weather"  onclick="setDT('weather')">WEATHER STOP</button>
+        <button class="delay-type-btn"     id="dt-trade"    onclick="setDT('trade')">TRADE ABSENT</button>
+        <button class="delay-type-btn"     id="dt-other"    onclick="setDT('other')">OTHER</button>
+      </div>
+      <textarea class="text-input" id="delayInput" style="height:54px;margin-bottom:8px;"
+        placeholder="e.g. Steel beam delivery delayed by 3 weeks — supplier backlog"></textarea>
+      <button class="outline-btn orange" onclick="replan()">⬡ GENERATE REVISED SCHEDULE ▶</button>
+    </div>
+
+  </div>
+
+  <!-- ══ CENTER ══ -->
+  <div class="center-panel">
+
+    <div class="dash-header">
+      <div>
+        <div class="dash-title" id="dashTitle">SPATIALFLOW READY</div>
+        <div class="dash-sub"   id="dashSub">Upload your site plan + schedule, then generate layout</div>
+      </div>
+      <div class="dash-stats">
+        <div class="stat-block"><div class="stat-val" id="sWeek">—</div><div class="stat-label">WEEK</div></div>
+      </div>
+    </div>
+
+    <div class="dash-tabs">
+      <div class="dash-tab active" onclick="tab('layout')">ZONE LAYOUT</div>
+      <div class="dash-tab"        onclick="tab('paths')">WORKER PATHS</div>
+      <div class="dash-tab"        onclick="tab('delivery')">DELIVERY SEQUENCE</div>
+      <div class="dash-tab"        onclick="tab('query')">AI RESPONSE</div>
+      <div class="dash-tab"        onclick="tab('replan')">REVISED SCHEDULE</div>
+    </div>
+
+    <!-- ZONE LAYOUT TAB -->
+    <div class="tab-content active" id="tab-layout">
+      <div class="empty" id="layoutEmpty">
+        <div class="empty-icon">📐</div>
+        <div class="empty-title">NO LAYOUT GENERATED</div>
+        <div class="empty-desc">Upload your site plan and schedule, then click "Generate Layout Plan" to see where temporary zones, materials and equipment should be positioned.</div>
+      </div>
+      <div id="layoutOut" style="display:none;flex-direction:column;gap:13px;"></div>
+    </div>
+
+    <!-- WORKER PATHS TAB -->
+    <div class="tab-content" id="tab-paths">
+      <div class="empty" id="pathsEmpty">
+        <div class="empty-icon">🚶</div>
+        <div class="empty-title">NO PATHS GENERATED</div>
+        <div class="empty-desc">Generate the layout plan first. Optimized temporary worker paths will appear here.</div>
+      </div>
+      <div id="pathsOut" style="display:none;flex-direction:column;gap:13px;"></div>
+    </div>
+
+    <!-- DELIVERY SEQUENCE TAB -->
+    <div class="tab-content" id="tab-delivery">
+      <div class="empty" id="deliveryEmpty">
+        <div class="empty-icon">🚛</div>
+        <div class="empty-title">NO DELIVERY PLAN</div>
+        <div class="empty-desc">Generate the layout plan to see the optimized delivery sequence.</div>
+      </div>
+      <div id="deliveryOut" style="display:none;flex-direction:column;gap:13px;"></div>
+    </div>
+
+    <!-- AI RESPONSE TAB -->
+    <div class="tab-content" id="tab-query">
+      <div class="empty" id="queryEmpty">
+        <div class="empty-icon">💬</div>
+        <div class="empty-title">NO QUERY YET</div>
+        <div class="empty-desc">Type a spatial question in the left panel and click Optimize.</div>
+      </div>
+      <div id="queryOut" style="display:none;">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title"><div class="card-dot" style="background:var(--accent)"></div>AI SPATIAL RESPONSE</div>
+          </div>
+          <div class="card-body"><div class="ai-text" id="queryText"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REVISED SCHEDULE TAB -->
+    <div class="tab-content" id="tab-replan">
+      <div class="empty" id="replanEmpty">
+        <div class="empty-icon">⚠️</div>
+        <div class="empty-title">NO DISRUPTION REPORTED</div>
+        <div class="empty-desc">Report a delay or disruption in the left panel. SpatialFlow will generate a revised week-by-week schedule with zero idle days.</div>
+      </div>
+      <div id="replanOut" style="display:none;flex-direction:column;gap:13px;"></div>
+    </div>
+
+  </div>
+
+  <!-- ══ RIGHT PANEL ══ -->
+  <div class="right-panel">
+
+    <!-- Materials this week -->
+    <div class="panel-section">
+      <div class="section-label">Materials This Week</div>
+      <table class="flow-table">
+        <thead><tr><th>Material</th><th>Vol</th><th>→ Zone</th></tr></thead>
+        <tbody id="matTable">
+          <tr><td colspan="3" style="font-family:var(--mono);font-size:10px;color:var(--muted);padding:10px 8px;">
+            Generate layout to see material flow
+          </td></tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

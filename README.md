@@ -1,6 +1,6 @@
 # ⬡ SpatialFlow — Construction Logistics AI
 
-SpatialFlow is an AI-powered construction site logistics tool that reads your site plan image and project schedule to recommend optimal temporary zone placements, worker paths, for each week of your project. It uses Claude (Anthropic) to analyse the real layout of your site and generate structured spatial decisions, not redesigns, but week-by-week temporary positioning of materials, equipment, and people. When a disruption hits in delivery or work, it instantly replans the entire schedule to eliminate idle days.
+SpatialFlow is an AI-powered construction site logistics tool that reads your site plan image and project schedule to recommend optimal temporary zone placements, worker paths, for each week of your project. It uses Claude (Anthropic) to analyse the real layout of your site and generate structured spatial decisions, not redesigns, but week-by-week temporary positioning of materials, equipment, and people. When a disruption hits in delivery or work , it instantly replans the entire schedule to eliminate idle days.
 
 ---
 
@@ -27,7 +27,7 @@ The app is a Flask backend + vanilla JS frontend. No framework, no build step. T
 
 **Backend (`server.py`)**
 
-All intelligence lives in four Flask endpoints. Each one constructs a precise prompt, calls Claude via the Anthropic SDK and returns structured JSON. Claude is never asked to generate UI or explain itself but only to return valid JSON arrays or short text answers.
+All intelligence lives in four Flask endpoints. Each one constructs a precise prompt, calls Claude via the Anthropic SDK, and returns structured JSON. Claude is never asked to generate UI or explain itself but only to return valid JSON arrays or short text answers.
 
 - `/parse-schedule` — Takes raw schedule text in any format and returns a structured JSON array of weeks with `activity` and `materials` fields. This powers the week slider in the UI.
 - `/generate-layout` — The core endpoint. Sends the current week context, full schedule, and optionally the site plan image to Claude. Returns zone recommendations, worker paths, materials table and a key spatial insight. If an image is provided, Claude references actual structural features in its recommendations rather than generic directions.
@@ -51,8 +51,8 @@ The week slider updates in real time from `parsedWeeks` — the structured array
 ### Research Findings
 
 - Claude with a site plan image produces significantly accurate zone placement. With an image it outputs things like "stage rebar adjacent to the north boundary wall, clear of the existing drainage channel."
-- Telling Claude the current week number and materials needed *before* the full schedule produces better recommendations than burying that context inside a long schedule block. Prompt order matters.
-- The `/parse-schedule` endpoint is robust across inconsistent formats — Claude handles bullet lists, numbered lists, CSV rows, and free-text paragraphs and always returns a clean JSON array.
+- Telling Claude the current week number and materials delayed(before) it produces a full revised schedule with better recommendations.
+- The `/parse-schedule` endpoint is robust across inconsistent formats, Claude handles bullet lists, numbered lists, CSV rows, and free-text paragraphs and always returns a clean JSON array.
 
 ---
 

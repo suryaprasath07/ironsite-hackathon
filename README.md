@@ -135,7 +135,7 @@ Open the index.html in browser.
 | Method | Endpoint | Key Inputs | Output |
 |--------|----------|------------|--------|
 | POST | `/parse-schedule` | `schedule` (string) | `{ weeks: [...] }` |
-| POST | `/generate-layout` | `week`, `weekContext`, `schedule`, `image?` | zones, paths, delivery, materials |
+| POST | `/generate-layout` | `week`, `weekContext`, `schedule`, `image?` | zones, paths, materials |
 | POST | `/query` | `question`, `week`, `weekContext`, `schedule`, `image?` | `{ answer: string }` |
 | POST | `/replan` | `disruption`, `delayType`, `week`, `schedule` | revised weeks with status codes |
 

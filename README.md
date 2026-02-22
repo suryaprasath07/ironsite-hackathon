@@ -1,4 +1,4 @@
-# ⬡ SpatialFlow — Construction Logistics AI
+# ⬡ SpatialFlow - Construction Logistics AI
 
 SpatialFlow is an AI-powered construction site logistics tool that reads your site plan image and project schedule to recommend optimal temporary zone placements, worker paths, for each week of your project. It uses Claude (Anthropic) to analyse the real layout of your site and generate structured spatial decisions, not redesigns, but week-by-week temporary positioning of materials, equipment, and people. When a disruption hits in delivery or work , it instantly replans the entire schedule to eliminate idle days.
 
